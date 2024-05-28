@@ -40,7 +40,7 @@ It is recommended to start by setting up a virtual environment using `venv`.
 
 ```bash
 git clone https://github.com/simonlobgromov/Akylai_inference
-Akylai_inference
+cd Akylai_inference
 pip install -e .
 apt-get install espeak-ng
 ```
