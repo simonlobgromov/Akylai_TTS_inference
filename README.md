@@ -82,7 +82,7 @@ options:
 
 The audio will be saved to the `./Akylai_inference/output` folder!!
 
-The `inference_script.py` script also has a `tensor_to_wav_bytes()` function that converts wav to a byte file.
+The `inference_script.py` also has a `tensor_to_wav_bytes()` function that converts output to a byte file.
 
 
 
