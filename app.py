@@ -142,8 +142,8 @@ with gr.Blocks(css=css) as block:
         """
     )
     with gr.Row():
-        image_url = "https://github.com/simonlobgromov/Matcha-TTS/blob/main/photo_2024-04-07_15-59-52.png?raw=true"
-        gr.Image(image_url, label=None, width=660, height=315, show_label=False)
+        image_path = "./photo_2024-04-07_15-59-52.png"
+        gr.Image(image_path, label=None, width=660, height=315, show_label=False)
     with gr.Row():
         with gr.Column():
             input_text = gr.Textbox(label="Input Text", lines=2, value=default_text, elem_id="input_text")
