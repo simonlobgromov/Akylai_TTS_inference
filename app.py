@@ -12,9 +12,20 @@ from matcha.models.matcha_tts import MatchaTTS
 from matcha.text import sequence_to_text, text_to_sequence
 from matcha.utils.utils import intersperse
 import gradio as gr
+import requests
 
+def download_file(url, save_path):
+    response = requests.get(url)
+    with open(save_path, 'wb') as file:
+        file.write(response.content)
 
+url_checkpoint = 'https://github.com/simonlobgromov/AkylAI_Matcha_Checkpoint/releases/download/Matcha-TTS/checkpoint_epoch.499.ckpt'
+save_checkpoint_path = './checkpoints/checkpoint.ckpt'
+url_generator = 'https://github.com/simonlobgromov/AkylAI_Matcha_HiFiGan/releases/download/Generator/generator_v1'
+save_generator_path = './checkpoints/generator'
 
+download_file(url_checkpoint, save_checkpoint_path)
+download_file(url_generator, save_generator_path)
 
 def load_matcha( checkpoint_path, device):
     model = MatchaTTS.load_from_checkpoint(checkpoint_path, map_location=device)
