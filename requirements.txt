@@ -55,3 +55,4 @@ librosa==0.10.1
 tqdm==4.66.2
 # ---- inference interface ---- #
 streamlit==1.33.0
+requests
