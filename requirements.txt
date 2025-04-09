@@ -32,7 +32,7 @@ inflect
 Unidecode
 scipy
 torchaudio
-matplotlib
+matplotlib==3.8.3
 pandas
 conformer==0.3.2
 diffusers==0.25.0
@@ -43,7 +43,7 @@ gdown
 wget
 seaborn
 piper_phonemize
-huggingface_hub[cli]
+huggingface_hub[cli]==0.23.0
 
 # ----- create dataset ---- #
 pandas==2.0.3
