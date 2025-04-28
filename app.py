@@ -19,7 +19,7 @@ def download_file(url, save_path):
     with open(save_path, 'wb') as file:
         file.write(response.content)
 
-url_checkpoint = 'https://github.com/simonlobgromov/AkylAI_Matcha_Checkpoint/releases/download/Matcha-TTS/checkpoint_epoch.499.ckpt'
+url_checkpoint = 'https://github.com/simonlobgromov/AkylAI_Matcha_Checkpoint/releases/download/LiveSpeech2025-v.1.0/checkpoint_epoch.459.ckpt'
 save_checkpoint_path = './checkpoints/checkpoint.ckpt'
 url_generator = 'https://github.com/simonlobgromov/AkylAI_Matcha_HiFiGan/releases/download/Generator/generator_v1'
 save_generator_path = './checkpoints/generator'
